@@ -1,0 +1,17 @@
+"pt-BR":
+  links:
+    back: Voltar
+    show: Exibir
+    home: Inicio
+    destroy: Deletar
+    edit: Editar
+    new: Novo Registro
+  dialogs:
+    destroy: 'Você tem certeza que quer remover?'
+  text:
+    listing: Listagem
+    editing: Editando
+  messages:
+    created: Registro criado com sucesso.
+    updated: Registro atualizado com sucesso.
+    destroyed: Registro removido com sucesso.

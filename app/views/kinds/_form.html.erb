@@ -1,0 +1,23 @@
+<%= form_for(@kind, html: { class: "basic-grey" })  do |f| %>
+  <h1><%= "#{t('text.editing')} #{t('activerecord.models.kind.one')}" %></h1>
+  <% if @kind.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@kind.errors.count, "error") %> prohibited this kind from being saved:</h2>
+
+      <ul>
+      <% @kind.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_field :description %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Enviar", class: "btn btn-success" %>
+    <%= link_to t('links.back'), kinds_path, class: "btn btn-info" %>
+  </div>
+<% end %>
